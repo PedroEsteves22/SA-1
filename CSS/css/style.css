@@ -1,0 +1,274 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+/*Classes auxiliares*/
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 2%;
+}
+
+.clear{
+    clear: both;
+}
+
+/*classes do meu site*/
+
+header{
+    padding: 8px 0;
+}
+
+.logo h2{
+    font-weight: normal;
+    font-size: 23px;
+}
+
+.logo{
+    float: left;
+}
+
+nav.menu-desktop{
+    float: right;
+}
+
+/*aqui como eu tinha colocado uma especificação nas palavras do li "nav.menu-desktop li"
+agora eu quero mexer em apenas uma delas,
+entao tenho que repetir e colocar a classe por cima como no exemplo
+para aparecer a especificação na palavra única*/
+nav.menu-desktop li.selected{
+    font-weight: bold;
+}
+
+nav.menu-desktop li{
+    display: inline-block;
+    padding: 0 10px;
+    font-weight: lighter;
+}
+
+nav.menu-desktop ul{
+    position: relative;
+    top: 8px;
+}
+
+nav.menu-desktop a{
+    color: black;
+    /*remove o sublinhado do link*/
+    text-decoration: none;
+}
+
+/*quando o usuário passar o cursor do mouse em cima,
+debaixo da palavra vai ficar sublinhada ou marcada*/
+nav.menu-desktop a:hover{
+    text-decoration: underline;
+}
+
+/*Sessão main*/
+
+section.main-bg{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    padding: 175px 0;
+    /*colocar imagem*/
+    background-image: url('../imagens/carro.jpg');
+    /*imagem nao ficar repetindo*/
+    background-repeat: no-repeat;
+    /*para a imagem cobrir todo o espaço, se caso nao colocarmos isso e 
+    apenas o background-repeat, a imagem não vai pegar todo o espaço da tela*/
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+}
+
+/*o z index é usado para dar preferencia ao elemento que esta um em cima do outro
+qual que queremos q fica por cima e qual q queremos que fique por baixo
+para funcionar usamos o positio relative
+z index 1 e z index 2 = o que esta com 2 estará por cima*/
+section.main-bg .container{
+    position: relative;
+    z-index: 2;
+}
+
+.overlay{
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    left: 0;
+    top: 0;
+
+}
+    
+section.main-bg h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+section.main-bg p{
+    color: white;
+    font-size: 13px;
+    margin-top: 15px;
+    text-align: left;
+    text-align: justify;
+}
+
+section.diferenciais{
+    padding: 30px 0;    
+    text-align: center;
+}
+
+.line-text{
+    position: relative;
+    display: inline-block;
+}
+
+.line-text div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100px;
+    height: 3px;
+    background: black;
+}
+
+.line-text h2{
+    font-size: 27px;
+    color: black;
+}
+
+.image-diferenciais{
+    margin-top: 35px;
+}
+
+.box-image-single{
+    float: left;
+    width: 33.3%;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+.box-image-single .peça1{
+    position: relative;
+    width: 100%;
+    padding: 190px 0;
+    background-image: url('../imagens/peça1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border: 2px solid black;
+    
+}
+
+.box-image-single .peça2{
+    position: relative;
+    width: 100%;
+    padding: 190px 0;
+    background-image: url('../imagens/peça2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border: 2px solid black;
+    
+}
+
+.box-image-single .peça3{
+    position: relative;
+    width: 100%;
+    padding: 190px 0;
+    background-image: url('../imagens/peça3.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    border: 2px solid black;
+    
+}
+
+.box-image-single p{
+    color: #646464;
+    font-weight: lighter;
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+section.sobre-equipe{
+    padding: 30px 0;
+    background: #2b2b2b;
+}
+
+section.sobre-equipe .container{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.equipe-container{
+    width: 50%;
+}
+
+.equipe-container h2{
+    color: white;
+}
+
+.sobre-container{
+    width: 50%;
+}
+
+.sobre-container h2{
+    color: white;
+}
+
+.sobre-container p{
+    color: white;
+    font-size: 15px;
+    margin: 10px;
+}
+
+.avatar-box{
+    margin-top: 15px;
+}
+
+.img-avatar{
+    background-image: url('../imagens/avatar.jpg');
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-size: 100% 100%;
+}
+
+.descriçao-avatar{
+    padding: 0 10px;
+    width: calc(100% - 70px);
+    display: inline-block;
+    color: white;
+}
+
+.descriçao-avatar h3{
+    font-weight: normal;
+    font-style: italic;
+    color: white;
+}
+
+
+@media screen and (max-width: 728px){
+    .box-image-single{
+        width: 100%;
+    }
+
+    .equipe-container{
+        width: 100%;
+    }
+    
+    .sobre-container{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+
