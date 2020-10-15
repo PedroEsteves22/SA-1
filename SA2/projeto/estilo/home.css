@@ -1,0 +1,378 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+header.image{
+    position: relative;
+    background-image: url(../image/carro.jpg);
+    width: 100%;
+    height: 660px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header.image h2{
+    text-align: center;
+}
+
+.opacidade{
+    position: absolute;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+header.image div.container{
+    display: flex;
+}
+
+.logo{
+    background-image: url(../image/pedromotors.gif);
+    width: 200px;
+    height: 150px;
+    position: relative;
+    bottom: 40px;
+    z-index: 2;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu{
+    width: 70%;
+    padding: 30px 5px;
+    position: relative;
+    z-index: 2;
+}
+
+.text-geral{
+    width: 13%;
+    position: relative;
+    z-index: 2;
+    padding-top: 15px;
+}
+
+.button-geral{
+    width: 10%;
+    position: relative;
+    z-index: 2;
+    padding-top: 15px;
+}
+
+.text input[type=text]{
+    display: block;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    
+}
+
+.text input[type=password]{
+    display: block;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.button input[type=button]{
+    float: left;
+    margin-top: 10px;
+    margin-left: 15px;
+    background: white;
+    width: 60%;
+    height: 30px;
+    cursor: pointer;
+}
+
+.button input:hover[type=button] {
+    background: gray;
+    color: white;
+}
+
+
+nav.menu li{
+    display: inline-block;
+    font-weight: lighter;
+    padding: 0px 15px;
+}
+
+nav.menu a{
+    text-decoration: none;
+    color: white;
+}
+
+nav.menu a:hover{
+    text-decoration: underline;
+}
+
+nav.menu li.selected{
+    font-weight: bolder;
+}
+
+header.image h2{
+    position: relative;
+    font-size: 30px;
+    padding-top: 100px;
+    margin-bottom: 25px;
+    z-index: 2;
+}
+
+header.image p{
+    position: relative;
+    color: white;
+    text-align: justify;
+    padding: 10px 50px;
+    font-size: 14px;
+    z-index: 2;
+}
+
+section.cards{
+    padding: 30px 0;
+}
+
+.card-single{
+    width: 25%;
+    float: left;
+    padding: 0px 50px;
+    
+}
+
+.card-single img{
+    width: 90%;
+    height: 150px;
+}
+
+.card-single img:hover{
+    border: 2px solid black;
+}
+
+.card-single h3{
+    font-weight: normal;
+    font-size: 19px;
+}
+
+.card-single p{
+    margin: 10px 0;
+    font-weight: lighter;
+    font-size: 16px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid black;
+}
+
+
+
+section.exp{
+    text-align: center;
+    padding: 30px 0;
+}
+
+.line-text{
+    display: inline-block;
+}
+
+.line-text div{
+    position: absolute;
+    background: black;
+    width: 200px;
+    height: 3px;
+}
+
+.line-text h2{
+    position: relative;
+    color: black;
+    font-size: 30px;
+}
+
+.icone-box{
+    margin-top: 25px;
+}
+
+.icone-box-single{
+    float: left;
+    width: 33.3%;
+}
+
+.icone-box-single h2{
+    color: blue;
+    font-size: 40px;
+}
+
+.icone-box-single .selected-1{
+    color: black;
+    font-size: 40px;
+}
+
+.icone-box-single .selected-2{
+    color: orangered;
+    font-size: 40px;
+}
+
+.icone-box-single p{
+    font-weight: lighter;
+}
+
+section.equipe-sobre{
+    margin-top: 30px;
+    background: #d4d4d4;
+    height: 200px;
+}
+
+section.equipe-sobre .line-text div{
+    position: absolute;
+    background: black;
+    width: 70px;
+    height: 3px;
+}
+
+section.equipe-sobre .line-text .sobre-linha{
+    position: absolute;
+    background: black;
+    width: 60px;
+    height: 3px;
+}
+
+section.equipe-sobre .container{
+    display: flex;
+    padding-top: 30px;
+}
+
+.equipe-container{
+    width: 50%;
+}
+
+.sobre-container{
+    width: 50%;
+}
+
+.avatar-box{
+    padding-top: 20px;
+}
+
+.img-avatar{
+    background-image: url(../image/avatar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 70px;
+    height: 65px;
+    border-radius: 50%;
+    display: inline-block;
+    
+}   
+
+.descriçao-avatar{
+    width: calc(100% - 70px);
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.line-text p{
+    padding-top: 20px;
+}
+
+.w50{
+    width: 50%;
+    float: left;
+}
+
+.center{
+    text-align: center;
+}
+
+section.inscriçao{
+    background: gray;
+    padding: 20px 0;
+}
+
+h2.inscriçao-texto{
+    font-weight: normal;
+    color: white;
+}
+
+.inscriçao-form input[type=text]{
+    width: calc(100% - 120px);
+    height: 40px;
+    background: white;
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding-left: 5px;
+}
+
+.inscriçao-form input[type=submit]{
+    padding-bottom: 2px;
+    width: 120px;
+    height: 40px;
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+    background: black;
+}
+
+.inscriçao-form input:hover[type=submit]{
+    background: white;
+    color: black;
+    border: 3px solid black;
+}
+
+section.inscriçao i{
+    padding-right: 10px;
+}
+
+.w33{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+}
+
+footer.footer-1{
+    margin-top: 15px;
+    background: black;
+    padding: 20px 0;
+    color: white;
+   
+}
+
+footer.footer-1 h2{
+    font-weight: normal;
+    font-size: 23px;
+}
+
+footer.footer-1 p{
+    margin-top: 8px;
+    font-weight: lighter;
+}
+
+footer.footer-1 a{
+    display: block;
+    color: white;
+}
+
+div.group-icons a{
+    font-size: 18px;
+    display: inline-block;
+    margin: 15px 10px;
+}
+
+footer.footer-2{
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer.footer-2 p{
+    color: white;
+}
+
