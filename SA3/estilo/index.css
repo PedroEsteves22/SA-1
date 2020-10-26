@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    font-family: 'Pacifico', cursive;
+}
+
+header{
+    background: #00fff7;
+    width: 100%;
+    height: 50px;
+}
+
+header nav li{
+    display: inline-block;
+    float: right;
+    padding: 12px 30px;
+}
+
+header nav li a{
+    text-decoration: none;
+    color: black;
+    transition: 0.3s;
+}
+
+header nav li a:hover{
+    color: white;
+    font-weight: bold;
+}
+
+header div.logo{
+    float: left;
+    padding: 12px 25px;
+}
+
+section div.carrocel{
+    width: 100%;
+    height: 607px;
+}
+
+.tela{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+
+.tela-1{
+    background-image: url(../image/c1328a38d062b784b6a4f4e27cbe6d76.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tela-2{
+    background-image: url(../image/bolo2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tela-3{
+    background-image: url(../image/bolo3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tela:target{
+    display: block;
+}
+
+section div.carrocel .seta-esquerda{
+    float: left;
+    position: relative;
+    top: 275px;
+    right: 250px;
+    font-size: 47px;
+    color: white;
+    transition: 0.5s;
+}
+
+section div.carrocel .seta-direita{
+    float: right;
+    font-size: 47px;
+    color:white;
+    position: relative;
+    top: 275px;
+    left: 550px;
+    transition: 0.5s;
+}
+
+section div.carrocel .seta-esquerda:hover{
+    color: #00fff7;
+}
+
+section div.carrocel .seta-direita:hover{
+    color: #00fff7;
+}
+
+section div.w50 img{
+    width: 100%;
+    padding-top: 50px;
+}
+
+section div.w50 p{
+    text-align: center;
+    padding-top: 15px;
+}
+
+section div.w50 input{
+    background-color:  #00fff7;
+    margin-top: 25px;
+    margin-left: 470px;
+    width: 200px;
+    height: 80px;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    border: 0;
+    border-radius: 25px;
+    transition: 0.3s;
+}
+
+section div.w50 input:hover{
+    color: white;
+    cursor: pointer;
+}
+
+section.somos{
+    background-color: coral;
+    margin-top: 75px;
+    height: 500px;
+}
+
+section.somos h2{
+    position: relative;
+    bottom: 125px;
+}
+
+section.somos p{
+    position: relative;
+    bottom: 100px;
+}
+
+.chocolate{
+    width: 100%;
+    position: relative;
+    bottom: 50px;
+}
+
+.w33{
+    float: left;
+    width: 33.3%;
+    text-align: center;
+}
+
+footer.footer-1{
+    margin-top: 15px;
+    background: black;
+    padding: 20px 0;
+    color: white;
+    height: 200px;
+}
+
+footer.footer-1 h2{
+    font-weight: normal;
+    font-size: 23px;
+}
+
+footer.footer-1 p{
+    margin-top: 8px;
+    font-weight: lighter;
+}
+
+footer.footer-1 a{
+    display: block;
+    color: white;
+}
+
+div.group-icons a{
+    font-size: 18px;
+    display: inline-block;
+    margin: 15px 10px;
+}
+
+footer.footer-2{
+    background: rgba(0, 0, 0, 0.9);
+    text-align: center;
+    padding: 15px 0;
+}
+
+footer.footer-2 p{
+    color: white;
+}
+
+
+
